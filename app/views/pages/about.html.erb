@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Alpha Blog Home</title>
+ 
+<style>
+    
+    /* Body */
+  body {
+    
+    background: #F5F4EF url('../images/bg.png');
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+ 
+/* Headings */
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em} /* 14px */
+ 
+h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: .8em;
+}
+ 
+
+ 
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+ 
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+ 
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+ 
+
+  /*  Header */
+#banner {
+  margin: 0 auto;
+  padding: 2.5em 0 0 0;
+}
+
+#banner .header-image {
+  width: 100%;
+  height: 300px;
+  background: url('https://images.unsplash.com/photo-1458640904116-093b74971de9') no-repeat bottom center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ 
+  /* Banner */
+  #banner h1 {
+    font-size: 3.571em; 
+    line-height: .6;
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  #banner h1 strong {
+    font-size: 0.36em; 
+    font-weight: normal;
+    
+  }
+  
+  /* Main Nav */
+  #banner nav {
+    background: #000305;
+    font-size: 1.143em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+  #banner nav li {float: left; display: inline; margin: 0;}
+  
+  #banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+  }
+  #banner nav a:hover, #banner nav a:active,
+  #banner nav .active a:link, #banner nav .active a:visited {
+    background: #C74451;
+    color: #fff;
+    text-shadow: none !important;
+  }
+  
+/*
+  Body
+*****************/
+#content {
+  background: #fff;
+  margin-bottom: 2em;
+  overflow: hidden;
+  padding: 20px 20px;
+  width: 760px;
+  margin: 0 auto;
+}
+
+#contentinfo {
+  background: #000;
+  margin-bottom: 2em;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100px;
+  
+}
+
+.three-col {
+       -moz-column-count: 2;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 20px;
+}
+
+
+    
+</style>
+ 
+</head>
+ 
+<body id="index" class="home">
+
+<header id="banner" class="body">
+  <h1>Alpha Blog</h1>
+  <div class="header-image"></div>
+  <nav><ul>
+    <li><%= link_to 'home', root_path %></li>
+    <li class="active"><%= link_to 'about', about_path %></li>
+  </ul></nav>
+ 
+</header><!-- /#banner -->
+
+
+<section id="content">
+  <p class="three-col">Drinking vinegar skateboard bespoke, poutine butcher letterpress YOLO viral whatever tote bag. Forage pork belly polaroid, salvia kinfolk quinoa direct trade DIY. Art party small batch mustache viral, YOLO cardigan drinking vinegar slow-carb kogi 90's forage. Bespoke VHS yr roof party. Drinking vinegar cornhole chia, williamsburg slow-carb freegan echo park vegan tilde. Lo-fi pug four dollar toast, DIY everyday carry microdosing literally keffiyeh flannel heirloom art party mustache gastropub pitchfork. Celiac put a bird on it pug, heirloom cornhole shabby chic cardigan mumblecore chartreuse brooklyn chia banh mi.
+
+Skateboard asymmetrical beard salvia, wolf farm-to-table tofu. Health goth mumblecore irony pug pitchfork. Kogi tote bag deep v ugh. Aesthetic gentrify literally, readymade deep v beard yuccie. Disrupt forage brooklyn put a bird on it small batch raw denim. Bushwick leggings truffaut franzen, gochujang 3 wolf moon craft beer poutine narwhal gastropub knausgaard intelligentsia hashtag. Paleo yr marfa kombucha gastropub fixie.
+
+Kinfolk lo-fi pour-over, helvetica sriracha neutra tote bag squid bitters normcore thundercats single-origin coffee yuccie meditation truffaut. Hella pinterest lo-fi aesthetic. Blue bottle yr celiac meh crucifix, street art chillwave truffaut godard waistcoat health goth keytar gastropub migas. Disrupt craft beer vinyl selfies pinterest. Waistcoat semiotics raw denim gentrify yr 8-bit, williamsburg celiac letterpress bicycle rights. Master cleanse tattooed small batch, lumbersexual stumptown literally you probably haven't heard of them gochujang vegan kitsch hashtag 90's blog. Kickstarter tofu cornhole, kitsch humblebrag meh lumbersexual drinking vinegar narwhal bicycle rights tilde mustache.</p>
+  
+  
+</section>
+
+
+
+
+
+
+
+<footer id="contentinfo" class="body">
+  
+</footer><!-- /#contentinfo -->
+
+
+
+
+
+</body>
+</html>
